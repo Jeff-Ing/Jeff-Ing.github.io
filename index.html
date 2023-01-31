@@ -13,10 +13,10 @@
 
             //Functions for changing the text "On", to the text "Off"
             function wordon() {
-                document.getElementById("words").innerHTML = "On";
+                document.getElementById("words").innerHTML = "<span class="on">On</span>";
             }
             function wordoff() {
-                document.getElementById("words").innerHTML = "Off";
+                document.getElementById("words").innerHTML = "<span class="off">Off</span>";
             }
 
         </script>
@@ -84,6 +84,13 @@
                 -webkit-text-fill-color: transparent;
             }
 
+            .on{
+                color:green;
+            }
+            
+            .off{
+                color:red;
+            }
             /* Styles the button class while active*/
             .button:active {
                 background-color: #2828ac;
